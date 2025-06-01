@@ -1,3 +1,13 @@
+WHAT IT IS/WHAT IT DOES:
+Google Cloud Console & Gmail API based Python app which downloads all targeted emails from your gmail inbox
+  
+  TARGET EMAILS:
+  Downloads all emails from a specified sender
+  
+  OUTPUT:
+  Saves email text (email subjects and bodies) into separate .txt files for each email 
+  Downloads all email attachments of any file type, keeping their original file names and skipping duplicates (works for images, videos, audio, etc as long as it's   attached to the email - have not tested for imbedded images, only those added as attachments)
+
 How to set up app with Gmail API/Google Cloud Console:
 https://console.cloud.google.com/
 - Log in
