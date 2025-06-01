@@ -62,4 +62,27 @@ Run the program:
     -  these will be saved in the email_texts subdirectory of your applocation directory
 - attachments from emails will be downloaded into the attachements subdirectory of your applocation directory
 
+Cleanup
 
+- for privacy/safety, once you are finished with the app, you can remove its access to your accounts with the following steps:
+- delete token file
+- open  https://myaccount.google.com/permissions
+    - Third-party apps & services
+    - look for the name of your App
+    - click on it and click Delete all connections you have with (name of app)
+    - repeat this process on all gmail accounts you backed up
+- optional:
+    - Delete your google cloud console app
+      - Go to https://console.cloud.google.com
+      - Click your project > Project Settings
+      - At the bottom, click "Shut down"
+      - Confirm deletion
+    - This will revoke:
+      - The app’s client ID and secret
+      - Any OAuth tokens tied to it
+      - Gmail API access through that app
+- if you want to use this in the future:
+    - don't delete the app
+        - keep your credentials.json file in a secure location
+    - delete the app
+        - remake the app in the future when you need to use it again
