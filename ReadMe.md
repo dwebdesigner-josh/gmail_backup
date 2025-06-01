@@ -56,6 +56,7 @@ Run the program:
   - should open a browser window for you to select the account you want to backup the inbox from, and approve access to it
   - make sure the account you select is listed in your test users (see earlier steps) in your app's google cloud console settings
   - Once you approve, a token.json file will be created. You will not have to approve access again
+      - to backup emails for a different gmail account after this, just delete the token file, and when asked to reauthenticate, choose the desired account
 - the program will then run, and you will see files that are saved or skipped (skipped if duplicate attachment file names exist - duplicate emails should be fine however, as each will be saved with their unique message ID as part of the title of the file)
 - email subject and body (if any) will be saved in the .txt files, each being named based on their source email's date and message ID
     -  these will be saved in the email_texts subdirectory of your applocation directory
