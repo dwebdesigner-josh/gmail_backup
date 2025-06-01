@@ -74,9 +74,11 @@ Cleanup
 - optional:
     - Delete your google cloud console app
       - Go to https://console.cloud.google.com
-      - Click your project > Project Settings
-      - At the bottom, click "Shut down"
-      - Confirm deletion
+        - Click your project
+        - 3 dots button in top right corner next to profile icon
+        - Project Settings
+        - At the top, click "Shut down"
+        - Confirm deletion
     - This will revoke:
       - The app’s client ID and secret
       - Any OAuth tokens tied to it
