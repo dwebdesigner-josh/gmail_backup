@@ -14,14 +14,10 @@ https://console.cloud.google.com/
 - -  it may ask you to add payment info (for google cloud console subscription) - you can just close this page/go to home page and bypass it
 - Click the project dropdown (top bar) → “New Project”
 - Name it something like GmailDownloader, then click Create
-- Set up OAuth Consent Screen (hamburger menu>API's & Services>Oauth Consent Screen)
+- Set up OAuth Consent Screen (navigation menu (≡) > API's & Services > Oauth Consent Screen)
   - Branding tab - fill out required info
   - Audience tab - make sure Publishing status is Testing
   -   scroll down to Test users - add whichever gmail account you would like to backup
-- Enable Gmail API
-  - In your project dashboard, go to the Navigation menu (≡) → APIs & Services → Library
-  - Search for Gmail API
-  - Click Gmail API, then click Enable
 - Configure OAuth 2.0 credentials
   - Go to APIs & Services → Credentials
   - Click + Create Credentials → OAuth client ID
@@ -34,6 +30,11 @@ https://console.cloud.google.com/
     - Name: e.g., DesktopClient
     - Click Create
     - Click Download JSON on the credentials page — save this file as credentials.json and once you have the applocation directory created below, move this credentials.json file into that same folder as your .py script
+- Enable Gmail API
+  - In your project dashboard, go to the Navigation menu (≡) → APIs & Services → Library
+  - Search for Gmail API
+  - Click Gmail API, then click Enable
+
       
 On your local environment:
 - install Python https://www.python.org/downloads/
